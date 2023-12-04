@@ -1,0 +1,74 @@
+/* .logo{
+  height: 50px;
+  width: 50px;
+  rotate: 47deg;
+} */
+
+.header-fixo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px black;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+.header-fixo div{
+  padding: 10px;
+}
+.lista-content{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  height: 200vh;
+  width: 100%;
+  background-image: url('https://foxync.com/wp-content/uploads/sites/7/2016/07/91166485.jpg?strip=all&quality=80');
+  background-size: cover;
+}
+
+.lista-pages li button {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+  width: 350px;
+}
+
+.lista-pages li button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 9px 15px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.menu-button{
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.home-footer{
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
