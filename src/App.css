@@ -61,14 +61,23 @@
 .container{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   align-items: center;
   padding-top: 50px;
 }
 
 .home-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 20vh;
+  height: 320px;
   background-color: black;
+}
+
+.footer-content {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }

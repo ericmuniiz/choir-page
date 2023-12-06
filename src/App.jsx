@@ -20,7 +20,12 @@ function App(){
           <li><button>AGENDA</button></li>
         </ul>
       </div>
-      <div className='home-footer'></div>
+      <div className='home-footer'>
+        <div className='footer-content'>
+          <div style={{color: 'white'}}>Instagram</div>
+          <div style={{color: 'white'}}>Facebook</div>
+        </div>
+      </div>
     </div>
     </>
   )
