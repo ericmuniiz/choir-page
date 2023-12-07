@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { FiMenu } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function App(){
 
@@ -16,8 +17,8 @@ function App(){
     <div className='container'>
       <div className='lista-content'>
         <ul className='lista-pages'>
-          <li><button>KITS e PARTITURAS</button></li>
-          <li><button>AGENDA</button></li>
+          <li><Link to={"/Kits"}>KITS e PARTITURAS</Link></li>
+          <li><Link>AGENDA</Link></li>
         </ul>
       </div>
       <div className='home-footer'>
