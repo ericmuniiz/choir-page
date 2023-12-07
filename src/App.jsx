@@ -1,10 +1,23 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { FiMenu } from "react-icons/fi";
 import { CgCross } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 
 function App(){
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [menuState, setMenuState] = useState(false)
+
+  const openCloseMenuModal = () => {
+    if(menuState){
+      setIsModalOpen(false)
+      setMenuState(false)
+    }else{
+      setIsModalOpen(true)
+      setMenuState(true)
+    }
+  }
 
   return(
     <>
@@ -13,7 +26,7 @@ function App(){
         <h2>Cantaris Coral</h2>
         {/* <img className='logo' src="https://www.imagensempng.com.br/wp-content/uploads/2021/08/04-32.png" alt="imagem-logo" /> */}
       </div>
-      <div><button style={{cursor: "pointer"}}><FiMenu  className='menu-button'/></button></div>
+      <div><button onClick={openCloseMenuModal} style={{cursor: "pointer"}}><FiMenu  className='menu-button'/></button></div>
     </div>
     <div className='container'>
       <div className='lista-content'>
@@ -42,6 +55,19 @@ function App(){
         </div>
       </div>
     </div>
+    {isModalOpen && (
+                <div>
+                    <div className="modal">
+                        <ul>
+                          <li><button>Baixos</button></li>
+                          <li><button>Contraltos</button></li>
+                          <li><button>Sopranos</button></li>
+                          <li><button>Tenores</button></li>
+                          <li><button>Agenda</button></li>
+                        </ul>
+                    </div>
+                </div>
+            )}
     </>
   )
 }
