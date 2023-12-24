@@ -19,7 +19,6 @@ button{
 .modal {
   width: 10%;
   height: auto;
-
   position: fixed;
   top: 25.8%;
   left: 94%;
@@ -44,4 +43,21 @@ button{
   font-weight: bold;
 }
 
+@media screen and (min-width: 1000px) {
+  .modal {
+    transform: translate(-50%, -70%);
+  }
+}
+@media screen and (min-width: 700px) {
+  .modal {
+    transform: translate(-50%, -75%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal {
+    display: table;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
 
