@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
-  height: 200vh;
+  height: 150vh;
   width: 100%;
   background-image: url('https://foxync.com/wp-content/uploads/sites/7/2016/07/91166485.jpg?strip=all&quality=80');
   background-size: cover;
@@ -59,7 +59,7 @@
 .container{
   display: flex;
   flex-direction: column;
-  height: 120vh;
+  height: 110vh;
   width: 100%;
   align-items: center;
   padding-top: 50px;

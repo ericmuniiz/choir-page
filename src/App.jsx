@@ -23,7 +23,7 @@ function App(){
     <>
     <div className='header-fixo'>
       <div className='header-logo'>
-        <h2>Cantaris Coral</h2>
+        <Link to={"/"}><h2>Cantaris Coral</h2></Link>
         {/* <img className='logo' src="https://www.imagensempng.com.br/wp-content/uploads/2021/08/04-32.png" alt="imagem-logo" /> */}
       </div>
       <div><button onClick={openCloseMenuModal} style={{cursor: "pointer"}}><FiMenu  className='menu-button'/></button></div>
@@ -32,7 +32,7 @@ function App(){
       <div className='lista-content'>
         <ul className='lista-pages'>
           <li><Link to={"/Kits"}>KITS e PARTITURAS</Link></li>
-          <li><Link>AGENDA</Link></li>
+          <li><Link to={"/Teste"}>AGENDA</Link></li>
         </ul>
       </div>
       <div className='home-footer'>
